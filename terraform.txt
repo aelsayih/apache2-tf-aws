@@ -1,0 +1,18 @@
+Terraform - DevOps Beginners to Advanced with Projects
+
+terraform fmt
+terraform validate
+terraform init
+terraform plan
+terraform apply
+
+in terraform, when needs to create a key pair for ec2, you have to own a public key from your machine first as below
+#ssh-keygen     then copy contents of public-key.pub into public_key value in public_key value in key_pair.tf
+
+like in InstID.tf
+  value       = data.aws_ami.amiID.id
+value  here is the argument, data.aws_ami.amiID.id  all of it is attribute (aws_ami is resource type, amiID is the resource name, id is the attribute name)
+
+ingress is the inbound rules (Ingress Rule in Terraform = Inbound Rule in Console.)
+egress is the outbound rules (Egress Rule in Terraform = Outbound Rule in Console.)
+
